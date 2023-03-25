@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" src="main.js">
+    <link rel="stylesheet" src="indexx.js">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="indexx.js"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="pagina" style="display: block;">
+
+        <header>
+            <div class="menu">
+                <a href="#nav" class="hamburguer"><i class="fa fa-bars fa-2x"></i></a>
+                <!-- <a href="#txosnas"><i class="fa fa-user fa-2x" style="left: 100%;"></i> -->
+                <!-- <p>Usuario</p> -->
+                </a>
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    style="width:auto; justify-content: flex-end;">Usuario</button>
+            </div>
+        </header>
+        <button onclick="leerAsset()">Click me!</button>
+
+        <nav id="nav" class="nav">
+            <a href="#close-nav" class="closeMenu"><i class="fa fa-close fa-3x"></i></a>
+            <ul>
+                <!-- <li><a href="#"><i class="fa fa-home fa-2x" style="padding-left: 8px;"></i>
+                    <p>Home</p>
+                </a></li> -->
+                <li class="lista">
+                    <a href="#txosnas"><i class="fa fa-user fa-2x" style="padding-left: 8px;"></i></a>
+                    <p class="parrafo">Usuario</p>
+                </li>
+                <li class="lista">
+                    <a href="#txosnas"><i class="fa fa-user fa-2x" style="padding-left: 8px;"></i></a>
+                    <p class="parrafo">Consulta Coche</p>
+                </li>
+                <li class="lista"><a href="#txosnas"><i class="fa fa-user fa-2x" style="padding-left: 8px;"></i></a>
+                    <p class="parrafo">Confirmar asiento</p>
+                </li>
+                <li class="lista"><a href="#txosnas"><i class="fa fa-user fa-2x" style="padding-left: 8px;"></i></a>
+                    <p class="parrafo">Verificar vehiculo</p>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main" id="main">
+            <div class="coche">
+                <div class="tituloCoche">
+                    VIN VEHICULO XXX-XXXX-XXXXX
+                </div>
+            </div>
+
+            <img src="png-clipart-2017-hyundai-tucson-car-door-2018-hyundai-tucson-car-interior-glass-diesel-fuel-removebg-preview 1.png"
+                alt="boy" class="image" width="992" height="1108">
+
+            <div class="coche">
+                <div class="tituloCoche">
+                    SEAT MODEL XXX-XXXX-XXXXX
+                </div>
+            </div>
+
+
+            <div class="flex-container">
+                <div class="escanear">Escanear</div>
+                <button onclick="cositas()">Llamar a lan k</button>
+              
+
+            </div>
+
+
+        </div>
+
+
+
+        <div>
+        </div>
+    </div>
+
+
+ 
+    <!-- <div  id="id01" style="display: block;" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button   onclick="document.getElementById('pagina').style.display='block'" >Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div> -->
+
+</body>
+
+</html>
+
+<script>
+    var modal = document.getElementById('id01');
+    var pagina =  document.getElementById('pagina');
+    var prueba = {
+            nombre : "CRisthian",
+            edad : "23"
+        }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    window.onclick = function (event) {
+        if (event.target == pagina) {
+            pagina.style.display = "Block";
+            modal.style.display = "none";
+        }
+    }
+
+    // function pruebaDato(algo){
+    //   cositas(algo)
+    // }
+        
+
+   
+
+</script>
